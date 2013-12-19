@@ -1,0 +1,5 @@
+<%= "Kod: #{@photo.code}" %>
+
+<%= form_for @photo, multipart: true, html: {class: :dropzone, id: 'photo-dropzone'} do |f| %>
+    <%= f.hidden_field :code %>
+<% end %>
